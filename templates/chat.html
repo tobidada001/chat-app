@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../staticfiles/tailwind-all.min.css">
+    <title>Chat App | Django</title>
+</head>
+<body>
+    
+
+
+    <nav class="bg-black h-32 text-white flex justify-center items-center rounded-b-lg">
+       <h1 class="text-3xl font-semibold">Django Chat App</h1>
+    </nav>
+
+
+    <div class="h-screen bg-gray-300 p-10 rounded-lg">
+        
+        <div class="h-full w-10/12 md:w-8/12 bg-white rounded-lg mx-auto overflow-y-auto" style="height: 70%;">
+            
+            <div class="you p-4 pt-2 bg-indigo-600 rounded-br-lg my-1 mx-3 rounded-tl-lg rounded-bl-lg">
+                <div class="flex justify-between mb-2">
+                <small class="font-bold text-white">Tobi Dada</small> <small class="text-white">{% now 'd, m y' %}</small></div>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex fugit porro laboriosam ut sint eveniet unde nobis ullam nulla, mollitia nihil odio asperiores voluptate nostrum, eos laborum libero tempora enim.</p>
+            </div>
+            
+            <div class="reply p-4 pt-2 bg-orange-500 rounded-br-lg my-1 mx-3 rounded-tr-lg rounded-bl-lg">
+                <div class="flex justify-between mb-2">
+                <small class="font-bold text-white">Tobi Dada</small> <small class="text-white">{% now 'd, m y' %}</small></div>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex fugit porro laboriosam ut sint eveniet unde nobis ullam nulla, mollitia nihil odio asperiores voluptate nostrum, eos laborum libero tempora enim.</p>
+            </div>
+            
+
+
+
+
+        </div>
+
+        <div >
+            <form action="" method="POST" class="flex w-10/12 md:w-8/12 m-auto mt-10" >
+                <input type="text" placeholder="Type something..." class="h-16 block w-full rounded-b-lg flex-1 px-5" />
+                <input type="submit"  class=" rounded-b-lg px-10 font-semibold text-white bg-gray-800" >
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
