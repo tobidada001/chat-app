@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'Chat',
     
 ]
@@ -65,8 +66,9 @@ CHANNEL_LAYERS= {
     }
 }
 
+
 WSGI_APPLICATION = 'ChatProject.wsgi.application'
-# ASGI_APPLICATION = 'ChatProject.asgi.application'
+ASGI_APPLICATION = 'ChatProject.asgi.application'
 
 
 # Database
@@ -104,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC+1'
 
 USE_I18N = True
 

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../staticfiles/tailwind-all.min.css"> -->
+    <link rel="stylesheet" href="{% static 'tailwind-all.min.css' %}">
+    <title>Chat App | Django</title>
+</head>
+<body>
+    
+    <nav class="bg-black h-32 text-white flex justify-center items-center rounded-b-lg">
+       <h1 class="text-3xl font-semibold">Django Chat App Rooms</h1></nav>
+
+
+    <div class="h-screen bg-gray-300 p-10 rounded-lg">
+        <ul class="w-full text-center flex-col">
+            
+            {% for room in rooms %}
+            <li class="mt-5"><a href="{% url 'room_detail' room.slug %}" class="text-2xl font-semibold text-blue-900 underline">{{room.name}}</a></li>
+            {% endfor %}
+        </ul>
+      
+    </div>
+
+</body>
+</html>
